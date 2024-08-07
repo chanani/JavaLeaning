@@ -1,0 +1,29 @@
+package exception.ex3;
+
+
+import exception.ex3.exception.ConnectExceptionV3;
+import exception.ex3.exception.NetworkClientExceptionV3;
+import exception.ex3.exception.SendExceptionV3;
+
+public class NetworkServiceV3_1 {
+
+    public void sendMessage(String data) {
+        // 복잡한 NetWorkClient 사용 로직을 처리합니다.
+        String address = "http://example.com";
+        NetworkClientV3 client = new NetworkClientV3(address);
+        client.initError(data); // 에러 전달
+
+        try {
+            client.connect();
+            client.send(data);
+        } catch (ConnectExceptionV3 e) {
+            System.out.println("[연결 오류] 주소 : " + e.getAddress() + ", 메시지 : " + e.getMessage());
+        } catch (SendExceptionV3 e) {
+            System.out.println("[전송 오류] 주소 : " + e.getSendData() + ", 메시지 : " + e.getMessage());
+        } finally {
+            client.disconnect();
+        }
+
+
+    }
+}
