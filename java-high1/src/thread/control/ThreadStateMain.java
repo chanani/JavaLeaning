@@ -1,4 +1,4 @@
-package thread.control;
+package src.thread.control;
 
 import static util.MyLogger.log;
 
