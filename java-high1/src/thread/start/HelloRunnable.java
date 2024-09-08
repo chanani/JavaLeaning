@@ -1,4 +1,4 @@
-package thread.start;
+package src.thread.start;
 
 
 // Runnable 인터페이스를 상속 받아 사용

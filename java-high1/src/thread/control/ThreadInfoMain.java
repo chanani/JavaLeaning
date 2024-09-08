@@ -1,6 +1,7 @@
-package thread.control;
+package src.thread.control;
 
-import thread.start.HelloRunnable;
+
+import src.thread.start.HelloRunnable;
 
 import static util.MyLogger.log;
 

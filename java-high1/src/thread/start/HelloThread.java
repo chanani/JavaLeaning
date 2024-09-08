@@ -1,4 +1,4 @@
-package thread.start;
+package src.thread.start;
 
 public class HelloThread extends Thread {
     @Override
