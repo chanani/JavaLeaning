@@ -6,6 +6,7 @@ public class AnimalHospitalV2<T> {
 
     public void set(T animal){
         this.animal = animal;
+
     }
 
     public void checkup() {
