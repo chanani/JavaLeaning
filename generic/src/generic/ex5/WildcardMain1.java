@@ -23,6 +23,9 @@ public class WildcardMain1 {
 
 
         Dog dog = WildcardEx.printANdReturnGeneric(dogBox);
+
+        Cat cat = WildcardEx.printANdReturnGeneric(catBox);
+
         Animal animal = WildcardEx.printANdReturnWildcard(dogBox);
 
     }

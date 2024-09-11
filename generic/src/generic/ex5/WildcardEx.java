@@ -33,6 +33,9 @@ public class WildcardEx {
         return t;
     }
 
+    /**
+     * 상한 지정을 하면 반환하는 값은 반드시 상한 타입이다. 바꿀 수 없다.
+     */
     static Animal printANdReturnWildcard(Box<? extends Animal> box){
         Animal animal = box.get();
         System.out.println("이름 = " + animal.getName());
