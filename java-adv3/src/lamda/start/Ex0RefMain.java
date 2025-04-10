@@ -1,5 +1,6 @@
 package lamda.start;
 
+// 값 매개변수화
 public class Ex0RefMain {
 
     public static void main(String[] args) {
