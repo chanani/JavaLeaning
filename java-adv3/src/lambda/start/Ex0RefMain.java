@@ -1,4 +1,4 @@
-package lamda.start;
+package lambda.start;
 
 // 값 매개변수화
 public class Ex0RefMain {
