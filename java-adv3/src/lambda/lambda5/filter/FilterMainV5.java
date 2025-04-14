@@ -15,9 +15,5 @@ public class FilterMainV5 {
         List<String> stringResult = GenericFilter.filter(strings, s -> s.length() >= 2);
         System.out.println("stringResult = " + stringResult);
 
-
     }
-
-
-
 }
