@@ -23,7 +23,7 @@ public class MyStreamLoopMain {
             System.out.println("name = " + s);
         }
 
-        // 내부 반복
+        // 내부 반복 
         MyStreamV3.of(students)
                 .filter(s -> s.getScore() >= 80)
                 .map(s -> s.getName())
