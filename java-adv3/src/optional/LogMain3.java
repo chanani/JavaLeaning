@@ -15,7 +15,7 @@ public class LogMain3 {
         System.out.println("=== 디버그 모드 체크 ===");
         if (logger.isDebug()) {
             logger.debug(() -> value100() + value200());
-        }
+        } 
     }
 
     static int value100() {
